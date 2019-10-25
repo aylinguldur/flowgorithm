@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.6">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-18 03:09:11 &#214;S"/>
+        <attribute name="created" value="dXNlcjsgTEFQVE9QLTc3SlFBRjNUOyAyMDE5LTEwLTE4OyAwMjo0Njo1NyDDllM7IDMwMTc="/>
+        <attribute name="edited" value="dXNlcjsgTEFQVE9QLTc3SlFBRjNUOyAyMDE5LTEwLTE4OyAwMzowOToxMSDDllM7IDMwMDc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="V, F, vize, final" type="Integer" array="False" size=""/>
+            <output expression="&quot;Vize notunuzu giriniz&quot;"/>
+            <input variable="V"/>
+            <output expression="&quot;Final notunuzu giriniz&quot;"/>
+            <input variable="F"/>
+            <while expression="V&lt;=100&amp;&amp;F&lt;=100">
+                <assign variable="vize" expression="(V/100)*40"/>
+                <assign variable="final" expression="(F/100)*60"/>
+                <if expression="vize+final&gt;=60">
+                    <then>
+                        <output expression="&quot;GE&#199;T&#304;&quot;"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;KALDI&quot;"/>
+                    </else>
+                </if>
+                <input variable="V"/>
+                <input variable="F"/>
+            </while>
+            <call expression="main"/>
+        </body>
+    </function>
+</flowgorithm>

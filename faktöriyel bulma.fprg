@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.6">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-23 08:54:07 &#214;S"/>
+        <attribute name="created" value="dXNlcjsgTEFQVE9QLTc3SlFBRjNUOyAyMDE5LTEwLTIzOyAwODoxNzowNyDDllM7IDMwMTI="/>
+        <attribute name="edited" value="dXNlcjsgTEFQVE9QLTc3SlFBRjNUOyAyMDE5LTEwLTIzOyAwODo1NDowNyDDllM7IDMwMTM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="say&#305;, Fakt&#246;riyel, saya&#231;, f" type="Integer" array="False" size=""/>
+            <output expression="&quot;Fakt&#246;riyelini almak istedi&#287;iniz say&#305;y&#305; giriniz.(! yazman&#305;za gerek yok)&quot;"/>
+            <assign variable="fakt&#246;riyel" expression="1"/>
+            <assign variable="saya&#231;" expression="0"/>
+            <input variable="say&#305;"/>
+            <if expression="say&#305;&gt;0">
+                <then>
+                    <for variable="f" start="1" end="say&#305;" direction="inc" step="1">
+                        <assign variable="saya&#231;" expression="saya&#231;+1"/>
+                        <assign variable="fakt&#246;riyel" expression="fakt&#246;riyel*saya&#231;"/>
+                    </for>
+                    <output expression="fakt&#246;riyel"/>
+                </then>
+                <else>
+                    <output expression="&quot;pozitif say&#305; giriniz&quot;"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

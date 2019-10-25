@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.6">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-11 03:23:53 &#214;S"/>
+        <attribute name="created" value="dXNlcjsgTEFQVE9QLTc3SlFBRjNUOyAyMDE5LTEwLTExOyAwMTo0NzoyNiDDllM7IDMwMDY="/>
+        <attribute name="edited" value="dXNlcjsgTEFQVE9QLTc3SlFBRjNUOyAyMDE5LTEwLTExOyAwMzoyMzo1MyDDllM7IDMwMDI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="say&#305; tahmin oyunu&#13;&#10;"/>
+            <declare name="tahmin, rastgele, saya&#231;, hak" type="Integer" array="False" size=""/>
+            <assign variable="hak" expression="5"/>
+            <assign variable="tahmin" expression="0"/>
+            <assign variable="saya&#231;" expression="1"/>
+            <assign variable="rastgele" expression="0"/>
+            <assign variable="rastgele" expression="random(11)"/>
+            <output expression="rastgele"/>
+            <output expression="&quot;1 ile 10 aras&#305;nda bir tahmin giriniz&quot;"/>
+            <input variable="tahmin"/>
+            <while expression="tahmin!=rastgele">
+                <if expression="tahmin!=rastgele">
+                    <then>
+                        <if expression="tahmin&gt;rastgele">
+                            <then>
+                                <if expression="saya&#231;==hak">
+                                    <then>
+                                        <output expression="rastgele&amp;&quot; say&#305;s&#305;n&#305; &quot;&amp;hak&amp;&quot; kerede tahmin edemediniz&quot;"/>
+                                        <call expression="main"/>
+                                    </then>
+                                    <else>
+                                        <output expression="tahmin&amp;&quot; say&#305;s&#305;ndan daha k&#252;&#231;&#252;k say&#305; giriniz&quot;"/>
+                                        <output expression="hak-saya&#231;&amp;&quot; hakk&#305;n&#305;z kald&#305;&quot;"/>
+                                        <input variable="tahmin"/>
+                                    </else>
+                                </if>
+                            </then>
+                            <else>
+                                <if expression="saya&#231;==hak">
+                                    <then>
+                                        <output expression="rastgele&amp;&quot; say&#305;s&#305;n&#305; &quot;&amp;hak&amp;&quot; kerede tahmin edemediniz&quot;"/>
+                                        <call expression="main"/>
+                                    </then>
+                                    <else>
+                                        <output expression="tahmin&amp;&quot; daha k&#252;&#231;&#252;k bir say&#305; giriniz&quot;"/>
+                                        <output expression="hak-saya&#231;&amp;&quot; hakk&#305;n&#305;z kald&#305;&quot;"/>
+                                        <input variable="tahmin"/>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="saya&#231;" expression="saya&#231;+1"/>
+            </while>
+            <output expression="rastgele&amp;&quot; say&#305;s&#305;n&#305; &quot;&amp;saya&#231;&amp;&quot; defada tahmiin ettiniz&quot;"/>
+            <output expression="&quot;tebrikler&quot;"/>
+        </body>
+    </function>
+</flowgorithm>

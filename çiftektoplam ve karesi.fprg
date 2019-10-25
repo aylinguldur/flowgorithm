@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.6">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-23 10:33:46 &#214;S"/>
+        <attribute name="created" value="dXNlcjsgTEFQVE9QLTc3SlFBRjNUOyAyMDE5LTEwLTIzOyAxMDoxMDoyOCDDllM7IDMwMDE="/>
+        <attribute name="edited" value="dXNlcjsgTEFQVE9QLTc3SlFBRjNUOyAyMDE5LTEwLTIzOyAxMDozMzo0NiDDllM7IDMwMDY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="say&#305;1, say&#305;2, TekTop, &#199;iftTop, Tek&#199;arp&#305;m, i" type="Integer" array="False" size=""/>
+            <assign variable="&#199;iftTop" expression="0"/>
+            <assign variable="TekTop" expression="0"/>
+            <assign variable="Tek&#199;arp&#305;m" expression="1"/>
+            <output expression="&quot;bir say&#305; aral&#305;&#287;&#305; giriniz&quot;"/>
+            <input variable="say&#305;1"/>
+            <input variable="say&#305;2"/>
+            <for variable="i" start="say&#305;1" end="say&#305;2" direction="inc" step="1">
+                <if expression="i%2==1">
+                    <then>
+                        <assign variable="TekTop" expression="TekTop+i"/>
+                        <assign variable="Tek&#199;arp&#305;m" expression="Tek&#199;arp&#305;m*i"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&quot;Tek say&#305;lar&#305;n toplam&#305;: &quot;&amp;TekTop&amp;&quot; Tek say&#305;lar&#305;n &#231;arp&#305;m&#305;: &quot;&amp; Tek&#199;arp&#305;m"/>
+            <for variable="i" start="say&#305;1" end="say&#305;2" direction="inc" step="1">
+                <if expression="i%2==0">
+                    <then>
+                        <assign variable="&#199;iftTop" expression="&#199;iftTop+(i^2)"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&#199;iftTop"/>
+        </body>
+    </function>
+</flowgorithm>
